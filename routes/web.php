@@ -14,6 +14,7 @@ Auth::routes();
 Route::get('/', function () {
     return view('auth/login');
 });
+Route::resource('annonces', 'AnnonceController');
 
 Route::get('/home', 'HomeController@index')->name('home');
 

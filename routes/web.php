@@ -11,9 +11,13 @@
 |
 */
 Auth::routes();
-Route::get('/', function () {
+Route::get('/login', function () {
     return view('auth/login');
 });
+Route::get('/', function () {
+    return view('front/shared_accueil');
+});
+
 
 Route::get('/home', 'HomeController@index')->name('home');
 
